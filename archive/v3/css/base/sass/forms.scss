@@ -1,0 +1,103 @@
+@import "_mixins";
+
+.ui-horizontal-forms {
+	
+	label {
+		display:inline-block;
+		width:100px;
+	}
+	
+	.form-item {
+		clear:both;
+		display:block;
+	}
+	
+	.form-label {
+		float:left;
+		font-weight:bold;
+		@include rem(margin, 15 20 10 0);
+		text-align:right;
+		width:180px;
+	}
+	
+	.form-input {
+		float:left;
+		@include rem(margin, 10 0);
+		width:280px;
+	}
+	
+}
+
+.ui-vertical-forms {
+	
+	label {
+		display:inline-block;
+		width:100px;
+	}
+	
+	.form-item {
+		clear:both;
+		display:block;
+	}
+	
+	.form-label {
+		font-weight:bold;
+		@include rem(margin, 10 0 0 0);
+		width:280px;
+	}
+	
+	.form-input {
+		@include rem(margin, 0 0 5 0);
+		width:280px;
+	}
+	
+}
+
+.form-notice {
+	color:#999;
+	@include rem(font-size, 12);
+}
+
+.form-error {
+	color:#F00;
+	display:none;
+	@include rem(font-size, 12);
+}
+
+.form-warning {
+	color:#00F;
+	display:none;
+	@include rem(font-size, 12);
+}
+
+.form-item-error {
+	color:#F00;
+	
+	input[type="text"] {
+		border:solid 1px #F00;
+	}
+	
+	.form-notice {
+		display:none;
+	}
+	
+	.form-error {
+		display:block;
+	}
+}
+
+.form-item-warning {
+	color:#00F;
+	
+	input[type="text"] {
+		border:solid 1px #00F;
+	}
+	
+	.form-notice {
+		display:none;
+	}
+	
+	.form-warning {
+		display:block;
+	}
+}

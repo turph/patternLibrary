@@ -1,0 +1,31 @@
+/* line 5, ../sass/inputs.scss */
+input[type="text"].ui-input,
+input[type="password"].ui-input,
+input[type="number"].ui-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: solid 1px #000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 22px;
+  line-height: 1.57143rem;
+  padding: 4px;
+  padding: 0.28571rem;
+  width: 100%;
+}
+
+/* line 17, ../sass/inputs.scss */
+input[type="text"].ui-input:focus,
+input[type="password"].ui-input:focus,
+input[type="number"].ui-input:focus {
+  box-shadow: 0 0 5px blue;
+}
+
+/* line 21, ../sass/inputs.scss */
+input[disabled="disabled"] {
+  background: #ccc;
+}

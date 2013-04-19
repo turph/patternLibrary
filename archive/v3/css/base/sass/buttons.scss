@@ -1,0 +1,113 @@
+@import "_mixins";
+@import "typography";
+@import "colors";
+
+
+.ui-button {
+	background:#000;
+	color:#fff;
+	display:inline-block;
+	@include rem(font-size,14);
+	@include rem(line-height,34);
+	@include rem(padding, 5 20 3);
+	font-weight: 600;
+	
+	&:hover {
+	  text-decoration: none;
+	}
+}
+
+.ui-button.ui-primary {
+  	background-color: #000;
+}
+
+.ui-button.ui-small {
+  	@include rem(line-height,30);
+  	@include rem(padding, 0 10);
+}
+
+.ui-button.ui-large {
+  	@include rem(line-height,54);
+  	@include rem(padding, 0 30);
+}
+
+.ui-button.ui-disabled {
+  	background: #ccc;
+  	cursor: default;
+}
+
+.ui-button-img {
+	@extend .ui-button;
+	@include rem(padding, 9);
+}
+
+.ui-button-combo-left {
+	@extend .ui-button;	
+	@include rem(padding, 5 20 3 10);
+	
+	img {
+		display:inline-block;
+		position:relative;
+		@include rem(margin, 3 5 -3 0);
+	}
+}
+
+.ui-button-combo-right {
+	@extend .ui-button;	
+	@include rem(padding, 5 10 3 20);
+	
+	img {
+		display:inline-block;
+		position:relative;
+		@include rem(margin, 3 0 -3 5);
+	}
+}
+
+.ui-combo {
+  position: relative;
+  
+  &:before {
+    background: url(http://placehold.it/16) no-repeat;
+    content: " ";
+	display:block;
+    height: 16px;
+    position: absolute;
+    width: 16px;
+    top: 50%;
+    margin-top: -8px;
+  }
+}
+
+.ui-button.ui-combo-right {
+  	@extend .ui-combo;
+  	padding-right: 46px; 
+  
+  	&:before {
+    	right: 20px;
+  	}
+}
+
+.ui-button.ui-combo-left {
+  	@extend .ui-combo;
+  	padding-left: 46px; 
+  
+  	&:before {
+    	left: 20px;
+  	}
+}
+
+.ui-button.ui-checkout {
+  	@extend .ui-button.ui-combo-right;
+  
+  	&:before {
+    	background-position: 0px 0px;
+  	}
+}
+
+.ui-button.ui-cart {
+  	@extend .ui-button.ui-combo-left;
+  
+  	&:before {
+    	background-position: 0px 0px;
+  	}
+}

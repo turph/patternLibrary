@@ -1,0 +1,66 @@
+@import "_mixins";
+
+
+$primary-font: Helvetica, Arial, sans-serif;
+$secondary-font: Helvetica, Arial, sans-serif;
+
+
+html { font-size:14px; }
+
+body { font:normal 100%/20px; font-family:$secondary-font; }
+
+h1, h2, h3, h4, h5, h6 { @include rem(margin, 0 0 10 0); }
+
+h1 {
+	@include rem(font-size, 24);
+	@include rem(line-height, 32);
+}
+
+h2 {
+	@include rem(font-size, 20);
+	@include rem(line-height, 28);
+}
+
+h3 {
+	@include rem(font-size, 18);
+	@include rem(line-height, 26);
+}
+
+h4 {
+	@include rem(font-size, 16);
+	@include rem(line-height, 24);
+}
+
+h5 {
+	@include rem(font-size, 14);
+	@include rem(line-height, 22);
+}
+
+.body-1 {
+	@include rem(font-size, 16);
+	@include rem(line-height, 24);
+}
+
+.body-2 {
+	@include rem(font-size, 14);
+	@include rem(line-height, 22);
+}
+
+.mouse {
+	@include rem(font-size, 12);
+	@include rem(line-height, 20);
+}
+
+p {
+	@include rem(margin, 20 0);
+}
+
+a {
+	text-decoration:none;
+	color:blue;
+	&:hover {text-decoration:underline;}
+}
+
+a.underline{
+	text-decoration:underline;
+}

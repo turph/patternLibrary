@@ -1,0 +1,27 @@
+@import "_mixins";
+
+.ui-breadcrumb {
+
+	li {
+		display:inline-block;
+		float:left;
+		list-style-type:none;
+	}
+	
+	a:after {
+		content:"/";
+		display:inline-block;
+		text-align:center;
+		width:20px;
+		color:black;
+	}
+	
+	li:last-child a {
+		font-weight:bold;
+	}
+	
+	li:last-child a:after {
+		display:none;
+	}
+	
+}

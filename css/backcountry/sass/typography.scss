@@ -1,0 +1,84 @@
+@import url("webfonts.css");
+@import "_mixins";
+
+html { font-size:14px; }
+
+body { font:normal 100%/20px; font-family:$secondary-font; }
+
+h1, h2, h3, h4, h5, h6 { @include rem(margin, 0 0 10 0); }
+
+h1 {
+	@include rem(font-size, 22);
+	@include rem(line-height, 27);
+	font-family:$primary-font;
+	font-weight:bold;
+	color:#000;
+	letter-spacing:2px;
+	text-transform:uppercase;
+}
+
+h2 {
+	@include rem(font-size, 22);
+	@include rem(line-height, 27);
+	font-family:$secondary-font;
+	font-weight:bold;
+	color:#000;
+}
+
+h3 {
+	@include rem(font-size, 14);
+	@include rem(line-height, 26);
+	font-family:$primary-font;
+	font-weight:bold;
+	color:black;
+	text-transform:uppercase;
+}
+
+h4 {
+	@include rem(font-size, 16);
+	@include rem(line-height, 24);
+	font-family:$secondary-font;
+	font-weight:bold;
+}
+
+h5 {
+	@include rem(font-size, 16);
+	@include rem(line-height, 24);
+	font-family:$secondary-font;
+	font-weight:bold;
+	color:#333;
+}
+
+.body-1 {
+	@include rem(font-size, 16);
+	@include rem(line-height, 24);
+	font-family:$secondary-font;
+}
+
+.body-2 {
+	@include rem(font-size, 16);
+	@include rem(line-height, 18);
+	font-family:$secondary-font;
+	color:#333;
+}
+
+.mouse {
+	@include rem(font-size, 12);
+	@include rem(line-height, 20);
+	font-family:$secondary-font;
+	color:#666;
+}
+
+p {
+	@include rem(margin, 20 0);
+}
+
+a {
+	text-decoration:none;
+	color:#005695;
+	&:hover {text-decoration:underline;}
+}
+
+a.underline{
+	text-decoration:underline;
+}

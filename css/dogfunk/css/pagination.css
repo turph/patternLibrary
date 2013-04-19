@@ -1,0 +1,61 @@
+/* line 3, ../sass/pagination.scss */
+.ui-pagination {
+  line-height: 32px;
+}
+/* line 7, ../sass/pagination.scss */
+.ui-pagination li {
+  float: left;
+  padding: 0 1px;
+  margin: 0 0px;
+  font-weight: normal;
+}
+/* line 9, ../sass/pagination.scss */
+.ui-pagination li:nth-child(2) {
+  display: none;
+}
+/* line 11, ../sass/pagination.scss */
+.ui-pagination li:first-child a, .ui-pagination li:last-child a {
+  background: none;
+  -webkit-box-shadow: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  font-size: 1rem;
+  color: #3dbefe;
+  text-transform: capitalize;
+}
+/* line 19, ../sass/pagination.scss */
+.ui-pagination li:first-child a:hover, .ui-pagination li:last-child a:hover {
+  color: #66ccff;
+  text-decoration: underline;
+}
+/* line 25, ../sass/pagination.scss */
+.ui-pagination li:first-child a:before {
+  content: "« ";
+}
+/* line 29, ../sass/pagination.scss */
+.ui-pagination li:last-child a:after {
+  content: " »";
+}
+/* line 33, ../sass/pagination.scss */
+.ui-pagination li:last-child {
+  margin-left: 40px;
+}
+/* line 35, ../sass/pagination.scss */
+.ui-pagination a {
+  display: block;
+  font-weight: normal;
+  padding: 0 12px;
+  padding: 0 0.85714rem;
+}
+/* line 40, ../sass/pagination.scss */
+.ui-pagination a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #66ccff;
+}
+/* line 47, ../sass/pagination.scss */
+.ui-pagination a.selected {
+  color: #212223;
+  background-color: #dedede;
+  cursor: default;
+}

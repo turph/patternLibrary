@@ -1,0 +1,23 @@
+@import "_mixins";
+
+input[type="text"].ui-input,
+input[type="password"].ui-input,
+input[type="number"].ui-input {
+	@include appearance(none);
+	border:solid 1px #000;
+	@include box-sizing(border-box);
+	@include rem(font-size, 14);
+	@include rem(line-height, 22);
+	@include rem(padding, 4);
+	width:100%;
+}
+
+input[type="text"].ui-input:focus,
+input[type="password"].ui-input:focus,
+input[type="number"].ui-input:focus {
+	box-shadow:0 0 5px blue;
+}
+
+input[disabled="disabled"] {
+	background:#ccc;
+}

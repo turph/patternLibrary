@@ -1,0 +1,52 @@
+/*	Resets all basic html elements so that they do not inherit default classes */
+/* line 2, ../sass/reset.scss */
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, li, dl, dt, dd, form, a, fieldset, input, th, td, header, footer, article, section, nav, menu, hgroup, aside {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 3, ../sass/reset.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 4, ../sass/reset.scss */
+a:link, a:active, a:hover, a:visited {
+  text-decoration: none;
+}
+
+/* To ensure that the new HTML5 elements render correctly as block level elements	*/
+/* line 7, ../sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 8, ../sass/reset.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 9, ../sass/reset.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 10, ../sass/reset.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Gets rid of the margin below and image for some browsers */
+/* line 13, ../sass/reset.scss */
+img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}

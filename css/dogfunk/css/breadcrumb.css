@@ -1,0 +1,13 @@
+/* line 5, ../sass/breadcrumb.scss */
+.ui-breadcrumb a:after {
+  color: #b1b1b1;
+}
+/* line 9, ../sass/breadcrumb.scss */
+.ui-breadcrumb li:last-child a {
+  font-weight: normal;
+  color: #212223;
+}
+/* line 14, ../sass/breadcrumb.scss */
+.ui-breadcrumb li:last-child a:after {
+  display: none;
+}
