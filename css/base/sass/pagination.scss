@@ -1,0 +1,11 @@
+@import "_mixins";
+
+.ui-pagination {
+	line-height:32px;
+	li {float:left; list-style-type:none; padding:0 4px; margin:0 3px; font-weight:bold;}
+	li:nth-child(2){margin-right:-4px;};
+	li:first-child{margin-right:40px;}
+	li:last-child{margin-left:40px;}
+	a {display:block;}
+	a.selected {color:black;}
+}

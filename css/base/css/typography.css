@@ -1,0 +1,101 @@
+/* line 4, ../sass/typography.scss */
+html {
+  font-size: 14px;
+}
+
+/* line 6, ../sass/typography.scss */
+body {
+  font: normal 100%/20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 8, ../sass/typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10 0px;
+  margin: 0 0 0.71429rem 0;
+}
+
+/* line 10, ../sass/typography.scss */
+h1 {
+  font-size: 24px;
+  font-size: 1.71429rem;
+  line-height: 32px;
+  line-height: 2.28571rem;
+}
+
+/* line 15, ../sass/typography.scss */
+h2 {
+  font-size: 20px;
+  font-size: 1.42857rem;
+  line-height: 28px;
+  line-height: 2rem;
+}
+
+/* line 20, ../sass/typography.scss */
+h3 {
+  font-size: 18px;
+  font-size: 1.28571rem;
+  line-height: 26px;
+  line-height: 1.85714rem;
+}
+
+/* line 25, ../sass/typography.scss */
+h4 {
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 24px;
+  line-height: 1.71429rem;
+}
+
+/* line 30, ../sass/typography.scss */
+h5 {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 22px;
+  line-height: 1.57143rem;
+}
+
+/* line 35, ../sass/typography.scss */
+.body-1 {
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 24px;
+  line-height: 1.71429rem;
+}
+
+/* line 40, ../sass/typography.scss */
+.body-2 {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 22px;
+  line-height: 1.57143rem;
+}
+
+/* line 45, ../sass/typography.scss */
+.mouse {
+  font-size: 12px;
+  font-size: 0.85714rem;
+  line-height: 20px;
+  line-height: 1.42857rem;
+}
+
+/* line 50, ../sass/typography.scss */
+p {
+  margin: 20 0px;
+  margin: 1.42857rem 0;
+}
+
+/* line 54, ../sass/typography.scss */
+a {
+  text-decoration: none;
+  color: blue;
+}
+/* line 57, ../sass/typography.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 60, ../sass/typography.scss */
+a.underline {
+  text-decoration: underline;
+}

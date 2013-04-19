@@ -1,0 +1,18 @@
+@import "_mixins";
+
+.ui-breadcrumb {
+	
+	a:after {
+		color:$base-grey-2;
+	}
+	
+	li:last-child a {
+		font-weight:normal;
+		color:$base-primary-black;
+	}
+	
+	li:last-child a:after {
+		display:none;
+	}
+	
+}

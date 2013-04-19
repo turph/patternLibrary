@@ -1,0 +1,32 @@
+/* line 3, ../sass/pagination.scss */
+.ui-pagination {
+  line-height: 32px;
+}
+/* line 5, ../sass/pagination.scss */
+.ui-pagination li {
+  float: left;
+  list-style-type: none;
+  padding: 0 4px;
+  margin: 0 3px;
+  font-weight: bold;
+}
+/* line 6, ../sass/pagination.scss */
+.ui-pagination li:nth-child(2) {
+  margin-right: -4px;
+}
+/* line 7, ../sass/pagination.scss */
+.ui-pagination li:first-child {
+  margin-right: 40px;
+}
+/* line 8, ../sass/pagination.scss */
+.ui-pagination li:last-child {
+  margin-left: 40px;
+}
+/* line 9, ../sass/pagination.scss */
+.ui-pagination a {
+  display: block;
+}
+/* line 10, ../sass/pagination.scss */
+.ui-pagination a.selected {
+  color: black;
+}
